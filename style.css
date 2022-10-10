@@ -1,0 +1,61 @@
+* {
+  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif Telugu', serif;
+  text-align: center;
+  color: black;
+  }
+
+  body{
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .buttonContainer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .imgdiv{
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+  }
+
+button{
+  background-size: cover;
+  border-radius: 10%;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  margin: 20px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+h1{
+  color: #D58BDD;
+}
+
+h2{
+  color: #54BAB9;
+}
+
+h3{
+  color: #FF577F;
+}
+
+h4{
+  color: #59CE8F;
+}
+
+
+
+
+
