@@ -37,34 +37,58 @@ if(comp==user)
    res.innerHTML = `<h2>${ans}<h2>`
 
 }
-else if(user=='Rock' && comp=='Scissors')
+else if(user=='Scissors')
 {
-  userScore++
-  ans = "USER WINS"
-  res.innerHTML = `<h2>${ans}<h2>`
-}
-else if(user='Paper' && comp=='Rock')
-{
-  userScore++
-  ans = "USER WINS"
-  res.innerHTML = `<h2>${ans}<h2>`
-}
-else if(user=='Scissors' && comp=='Paper')
-{
-  userScore++
-  ans = "USER WINS"
-  res.innerHTML = `<h2>${ans}<h2>`
-}
-else
-{
-  compScore++
-  ans = "COMP WINS"
-  res.innerHTML = `<h2>${ans}<h2>`
-}
-score(compScore,userScore)
+  if(comp=='Paper')
+  {
+    userScore++
+    ans = "USER WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  else
+  {
+    compScore++
+    ans = "COMP WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  
 
 }
+else if(user=='Rock')
+{
+  if(comp=='Scissors')
+  {
+    userScore++
+    ans = "USER WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  else
+  {
+    compScore++
+    ans = "COMP WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  
+}
+else if(user='Paper')
+{
+  if(comp=='Rock')
+  {
+    userScore++
+    ans = "USER WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  else
+  {
+    compScore++
+    ans = "COMP WINS"
+    res.innerHTML = `<h2>${ans}<h2>`
+  }
+  
+}
 
+
+}
 const score = (compScore,userScore) =>{
   if(compScore==0 && userScore==0)
   {
@@ -75,13 +99,12 @@ const score = (compScore,userScore) =>{
    scoreIs = "User : "+userScore+" || Comp : "+compScore
    scores.innerHTML = `<h4>${scoreIs}</h4>`
   }
-}
 
+  score(compScore,userScore)
+}
 const MainPlayFunction = () =>{
 
   playUserClick()
-
 }
 
 MainPlayFunction()
-
